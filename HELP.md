@@ -20,3 +20,23 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 
+
+###DDL Queries
+
+-- MYDB.feature_access definition
+
+CREATE TABLE `feature_access` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `enable` bit(1) DEFAULT NULL,
+  `feature_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+##Hibernate ddl auto
+
+Hibernate ddl auto : create-drop
+
+#Port no : 9090 
+#database settings can be changed in application.properties
